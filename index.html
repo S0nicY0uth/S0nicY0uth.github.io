@@ -1,0 +1,57 @@
+---
+layout: home
+---
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/styles.css">
+<section id="about" class="hero">
+	<div class="col-50">
+	<div class="chris-hopkins"></div>
+	  <h1>Chris Hopkins</h1>
+	  <p>Full Stack Developer</p>
+	  <div class="col-50 profile">
+		<p>I'm an ambitious, hardworking and highly motivated Junior Full Stack Developer with one and a half years experience.  I care about my work and my craft. </p>
+	  </div>
+	  <a href="#mywork" class="main-cta desktop">View My Work</a>
+	</div>
+	<div class="col-50 skills">
+		<div class="skills-container">
+			{% for skills in site.skills %}
+			<div class="skill">
+		  	{% for keyval in skills %}
+		  	<div percentage="{{ keyval[1] }}" name="{{ keyval[0] }}" class="bar">
+		  		<span class="percentage">{{ keyval[1] }}</span>
+		  		<div class="name">{{ keyval[0] }}</div>
+		  	</div>
+		  	{% endfor %}
+	  	</div>
+	  	{% endfor %}
+		</div>
+		<a href="#mywork" class="main-cta mobile">View My Work</a>	
+	</div>
+
+	</div>
+</section> 
+<section id="mywork">
+	<div class="content">
+		<h3 class="projects">Projects</h3>
+		<div class="projects-container owl-carousel owl-theme">
+			{% for post in site.posts %}
+			<div class="project" style="background-image: url({{ post.thumb }});">
+				<div class="overlay">
+					<h5 class="project-heading">{{ post.title }}</h5>
+					<span class="tags">
+					{% for item in post.tags %}
+						{{ item }}
+					{% endfor %}
+					</span>
+					<a class="project-cta" target="_blank" href="{{ post.link }}">Visit Site</a>
+				</div>
+			</div>
+		
+			{% endfor %}
+		</div>
+	</div>	
+</section>
+
+<section id="contact">
+	<a href="#"><h3>contact</h3></a>
+</section>

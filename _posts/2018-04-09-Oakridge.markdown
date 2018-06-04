@@ -1,0 +1,9 @@
+---
+title:  "Oakridge Primary School"
+date:   2018-04-09 14:36:16 +0100
+categories: jekyll update
+tags: ['JS','PHP','TwitterAPI']
+link: "http://www.oakridge.staffs.sch.uk/"
+thumb: "/assets/img/oakridge.jpg"
+---
+

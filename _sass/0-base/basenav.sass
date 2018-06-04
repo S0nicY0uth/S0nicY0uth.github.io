@@ -1,0 +1,95 @@
+div.navigation
+	background-color: $black-color
+	height: 60px
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 60px
+	position: fixed
+	right: 0px
+	top: 0px
+	z-index: 10
+
+div.navigation .burger
+	//border: 2px solid white
+	height: 30px
+	width: 30px
+	margin-right: 14px
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	position: absolute
+	right: 0px
+	top: 15px
+
+div.navigation .burger span.bar
+	display: block
+	background-color: $dark-orange-color
+	height: 4px
+	width: 27px
+	margin-top: 4px
+	
+	&:first-child
+		margin-top: 0px
+
+
+div.navigation ul
+	list-style-type: none
+	display: none
+	margin-top: 0px
+	margin-bottom: 0px
+	padding: 0px
+	font-size: 23px
+
+div.navigation.on
+	position: fixed
+	top: 0px
+	left: 0px
+	right: 0px
+	bottom: 0px
+	height: auto
+	z-index: 10
+	width: 100%
+
+	.burger span.bar
+		position: relative
+		transition: all 0.3s ease-in-out
+		&:first-child
+			transform: rotate(-45deg)
+		&:nth-child(2)
+			display: none
+		&:last-child
+			transform: rotate(45deg)
+			top: -8px
+
+div.navigation ul.on
+	display: block
+	width: 100%
+
+div.navigation ul li
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	text-align: center
+	position: relative
+
+	a
+		color: white
+		text-align: center
+		width: 100%
+	
+		&:hover
+			color: $dark-orange-color
+
+	svg
+		height: 18px
+		width: 18px
+		color: $dark-orange-color
+		margin-right: 10px
+		position: relative
+		left: 0px
+		display: none
+
+
+
