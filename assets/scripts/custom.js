@@ -65,13 +65,14 @@ $(window).scroll(function(){
 
 function smoothScroll (duration) {
 	$('a[href^="#"]').on('click', function(event) {
+		alert('heyehey');
+		event.preventDefault();
 		var target = $( $(this).attr('href') );
 
 		$('.navigation').removeClass('on');
 		$('.navigation ul').removeClass('on');
 	
 	    if( target.length ) {
-	        event.preventDefault();
 	        $('html, body').animate({
 	            scrollTop: target.offset().top
 	        }, duration);
