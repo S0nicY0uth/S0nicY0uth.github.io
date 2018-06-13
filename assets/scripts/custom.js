@@ -16,8 +16,13 @@ $(document).ready(function(){
 		}
 	});
 
+	$(".touch").on("touchstart", function(event) {
+		window.location.href = $(event.target).attr('href');
+	  });
+
 
 });
+
 
 class Carousel{
 	constructor(options){
