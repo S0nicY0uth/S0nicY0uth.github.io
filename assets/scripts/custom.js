@@ -5,6 +5,7 @@ $(document).ready(function(){
 
 	$('.projects-container').owlCarousel({
 		loop:true,
+    	nav:true,
 		responsive:{
 			300:{
 				items:1
