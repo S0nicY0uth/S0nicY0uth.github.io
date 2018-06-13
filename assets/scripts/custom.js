@@ -16,8 +16,13 @@ $(document).ready(function(){
 		}
 	});
 
+	$(".touch").on("touchstart", function(event) {
+		window.location.href = $(event.target).attr('href');
+	  });
+
 
 });
+
 
 class Carousel{
 	constructor(options){
@@ -64,8 +69,7 @@ $(window).scroll(function(){
 });
 
 function smoothScroll (duration) {
-	$('a[href^="#"]').on('click', function(event) {
-		alert('heyehey');
+	$('a[href^="#"]').on('click touchstart', function(event) {
 		event.preventDefault();
 		var target = $( $(this).attr('href') );
 
@@ -81,7 +85,7 @@ function smoothScroll (duration) {
 }
 
 function burger(){
-	document.querySelector('.burger').addEventListener('click',function(){
+	$('.burger').on('click touchstart', function(event) {
 		document.querySelector('div.navigation ul').classList.toggle("on");
 		document.querySelector('div.navigation').classList.toggle("on");
 	});

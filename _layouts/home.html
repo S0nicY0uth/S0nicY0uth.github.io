@@ -14,7 +14,7 @@
     </head>
     <body>
       <div class="navigation">
-        <div class="burger">
+        <div class="burger" onClick="void(0)">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
@@ -22,15 +22,17 @@
         <ul>
           <li><i class="fas fa-user-circle"></i><a href="#about">About</a></li>
           <li><i class="fas fa-desktop"></i><a href="#mywork">Projects</a></li>
-          <li><i class="fas fa-briefcase"></i><a href="/assets/Resume_Chris_Hopkins.pdf" target="_blank">Resume</a></li>
-          <li><i class="fab fa-github"></i><a href="https://github.com/s0nicy0uth" target="_blank">GitHub</a></li>
+          <li><i class="fas fa-briefcase"></i><a class="touch" href="/assets/Resume_Chris_Hopkins.pdf" download>Resume</a></li>
+          <li><i class="fab fa-github"></i><a class="touch" href="https://github.com/s0nicy0uth" target="_blank">GitHub</a></li>
           <li><i class="fas fa-envelope"></i><a href="#contact">Contact</a></li>
         </ul>
       </div>
       <div id="sketch-holder">
         <div class="sketch-inner-content">
+          <div class="box">
           <h1>Hello, I'm <span>Chris Hopkins</span>.<br>I'm a Full-Stack Web Developer.</h1>
-          <a href="#about" class="main-cta">About</a>
+          <a href="#about" onClick='' class="main-cta">About</a>
+        </div>
         </div>
       </div>
       {{ content }}
