@@ -64,14 +64,14 @@ $(window).scroll(function(){
 });
 
 function smoothScroll (duration) {
-	$('a[href^="#"]').on('click', function(event) {
+	$('a[href^="#"]').on('click touchstart', function(event) {
+		event.preventDefault();
 		var target = $( $(this).attr('href') );
 
 		$('.navigation').removeClass('on');
 		$('.navigation ul').removeClass('on');
 	
 	    if( target.length ) {
-	        event.preventDefault();
 	        $('html, body').animate({
 	            scrollTop: target.offset().top
 	        }, duration);
@@ -80,7 +80,7 @@ function smoothScroll (duration) {
 }
 
 function burger(){
-	document.querySelector('.burger').addEventListener('click',function(){
+	$('.burger').on('click touchstart', function(event) {
 		document.querySelector('div.navigation ul').classList.toggle("on");
 		document.querySelector('div.navigation').classList.toggle("on");
 	});
