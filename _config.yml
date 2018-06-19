@@ -16,7 +16,7 @@ plugins:
 sass:
   sass_dir: _sass
 
-skills: [{HTML: '80%'},{CSS: '75%'},{JS: '60%'},{PHP: '55%'},{Ruby: '60%'},{Rails: '65%'}, {RSpec: 40%}, {React: 44%}]
+skills: [{HTML: '80%'},{CSS: '75%'},{JS: 70%'},{PHP: '75%'},{Ruby: '75%'},{Rails: '65%'}, {RSpec: 60%}, {React: 64%}]
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
