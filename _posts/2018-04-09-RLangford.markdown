@@ -5,6 +5,6 @@ categories: jekyll update
 tags: ['JS','PHP']
 link: "http://www.richardlangford.phenixdevelopment.co.uk/Home"
 thumb: "/assets/img/langford.jpg"
-copywright: "<a href='https://www.phenixdigital.co.uk/'>&copy; Phenix Digital Ltd</a>"
+copywright: "<a href='https://www.phenixdigital.co.uk/' target='_blank'>&copy; Phenix Digital Ltd</a>"
 ---
 

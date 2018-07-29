@@ -1,9 +1,0 @@
----
-title:  "Services 4 Schools"
-date:   2018-04-09 14:36:16 +0100
-categories: jekyll update
-tags: ['JS','PHP','BookeoAPI']
-link: "http://www.s4s.phenixdevelopment.co.uk/"
-thumb: "/assets/img/s4s.jpg"
----
-

@@ -5,6 +5,6 @@ categories: jekyll update
 tags: ['JS','PHP','TwitterAPI']
 link: "http://www.oakridge.staffs.sch.uk/"
 thumb: "/assets/img/oakridge.jpg"
-copywright: "<a href='https://www.phenixeducation.co.uk/'>&copy; Phenix Digital Ltd</a>"
+copywright: "<a href='https://www.phenixeducation.co.uk/' target='_blank'>&copy; Phenix Digital Ltd</a>"
 ---
 

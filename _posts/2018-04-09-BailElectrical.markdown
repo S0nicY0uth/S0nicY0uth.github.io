@@ -6,6 +6,6 @@ categories: jekyll update
 tags: ['JS','PHP','TwitterAPI']
 link: "https://www.bail.phenixdevelopment.co.uk/"
 thumb: "/assets/img/bail.jpg"
-copywright: "<a href='https://www.phenixdigital.co.uk/'>&copy; Phenix Digital Ltd</a>"
+copywright: "<a href='https://www.phenixdigital.co.uk/' target='_blank'>&copy; Phenix Digital Ltd</a>"
 ---
 
