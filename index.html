@@ -44,9 +44,15 @@ layout: home
 					{% endfor %}
 					</span>
 					<a class="project-cta" target="_blank" href="{{ post.link }}">Visit Site</a>
+					<span class="copywright">
+						{% for item in post.copywright %}
+							{% if item %}
+								{{ item }}
+							{% endif %}
+						{% endfor %}
+					</span>
 				</div>
-			</div>
-		
+			</div>		
 			{% endfor %}
 		</div>
 	</div>	

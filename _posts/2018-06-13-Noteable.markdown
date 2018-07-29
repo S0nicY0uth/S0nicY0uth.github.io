@@ -5,4 +5,5 @@ categories: jekyll update
 tags: ['React','Ruby','Rails','Devise']
 link: "https://noteable-notes.herokuapp.com/"
 thumb: "/assets/img/noteable.jpg"
+copywright: ""
 ---

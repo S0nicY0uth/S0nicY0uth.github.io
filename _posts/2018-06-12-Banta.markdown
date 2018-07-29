@@ -5,4 +5,5 @@ categories: jekyll update
 tags: ['JS','Ruby','Rails','Rspec', 'Action Cable']
 link: "https://wgc-banta.herokuapp.com/"
 thumb: "/assets/img/banta.jpg"
+copywright: ""
 ---
